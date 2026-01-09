@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@theme {
+  --breakpoint-phone: 40rem;
+  --breakpoint-tablet: 48rem;
+  --breakpoint-laptop: 64rem;
+  --breakpoint-desktop: 80rem;
+
+  --color-gray-text-h3: #767676;
+  --color-green-custom: #3cb46e;
+  --color-transparent-custom: rgba(0, 0, 0, .4);
+  --color-green-customH: #3bab6a;
+  --color-gray-custom-light: #f5f5f5;
+}
+
+.container {
+  @apply mx-auto px-[1.5rem] lg:px-[2rem] relative 2xl:max-w-screen-xl;
+}
+
+.container-header {
+  @apply mx-auto px-[1.5rem] lg:px-[2rem] relative 2xl:max-w-screen-2xl;
+}
+
+.max-w-custom-image {
+  max-width: calc(calc(100vh - 175px) * 1.5);
+}
+
+.style-custom-div {
+  min-width: min(100%, 870px);
+  max-width: calc(calc(100vh - 175px) * 1.5);
+}
+
+.button-transform-rotate1 {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.button-transform-rotate2 {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.suggestion{
+  cursor: pointer;
+  padding: 8px 16px;
+  line-height: 1.4;
+}
+
+.result_img {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .24);
+  object-fit: cover;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.result_img:hover {
+  transform: scale(1.1);
+}
