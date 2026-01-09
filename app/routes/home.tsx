@@ -6,7 +6,7 @@ import Search from "~/components/Search";
 import PhotoModal from "~/components/PhotoModal";
 import SpinnerLoader from "../components/SpinnerLoader";
 import { useInfiniteScroll } from "../hooks/useInfiniteScroll";
-import Hero from "../components/hero";
+import Hero from "../components/Hero";
 
 export function meta({}: Route.MetaArgs) {
   return [
