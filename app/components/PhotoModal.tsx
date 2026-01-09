@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router";
-import { useUnplashStore } from "~/store/useUnsplashStore";
+import { useUnplashStore } from "../store/useUnsplashStore";
 import SpinnerLoader from "./SpinnerLoader";
 
 interface PhotoModalProps {

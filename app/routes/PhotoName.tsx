@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import PhotoList from "~/components/PhotoList";
-import PhotoModal from "~/components/PhotoModal";
-import Search from "~/components/Search";
-import SpinnerLoader from "~/components/SpinnerLoader";
-import { useInfiniteScroll } from "~/hooks/useInfiniteScroll";
-import { useUnplashStore } from "~/store/useUnsplashStore";
+import PhotoList from "../components/PhotoList";
+import PhotoModal from "../components/PhotoModal";
+import Search from "../components/Search";
+import SpinnerLoader from "../components/SpinnerLoader";
+import { useInfiniteScroll } from "../hooks/useInfiniteScroll";
+import { useUnplashStore } from "../store/useUnsplashStore";
 
 export default function PhotoName() {
   const { photosByName, loadingPhotos, getPhotosByName } = useUnplashStore();

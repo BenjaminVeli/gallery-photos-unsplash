@@ -1,7 +1,7 @@
 import { create } from 'zustand';
-import { getPhotos, getPhotoById, getPhotosByName } from '~/services/unplash.service';
+import { getPhotos, getPhotoById, getPhotosByName } from '../services/unplash.service';
 import type { UnsplashStore } from "../types";
-import { handleError, handleRateLimitError } from '~/hooks/useErrorHandler';
+import { handleError, handleRateLimitError } from '../hooks/useErrorHandler';
 
 export const useUnplashStore = create<UnsplashStore>((set, get) => ({
     id: null,

@@ -4,9 +4,9 @@ import { useUnplashStore } from "../store/useUnsplashStore";
 import PhotoList from "~/components/PhotoList";
 import Search from "~/components/Search";
 import PhotoModal from "~/components/PhotoModal";
-import SpinnerLoader from "~/components/SpinnerLoader";
-import { useInfiniteScroll } from "~/hooks/useInfiniteScroll";
-import Hero from "~/components/hero";
+import SpinnerLoader from "../components/SpinnerLoader";
+import { useInfiniteScroll } from "../hooks/useInfiniteScroll";
+import Hero from "../components/hero";
 
 export function meta({}: Route.MetaArgs) {
   return [

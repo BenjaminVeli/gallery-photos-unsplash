@@ -1,4 +1,4 @@
-import { api } from "~/api/unplash";
+import { api } from "../api/unplash";
 
 export const getPhotos = (page = 1) =>
   api.get("/photos", {
